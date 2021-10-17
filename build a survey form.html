@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+
+<head>
+    <title>We Love Coffee</title>
+</head>
+
+<style>
+    box-principal {
+        background-color: rgba(49, 3, 3, 0.733);
+        position: absolute;
+        top: 25%;
+        left: 24%;
+        width: 54%;
+        height: 1500px;
+        border-radius: 5px;
+    }
+
+    #survey-form {
+        background-color: rgba(49, 3, 3, 0.733);
+        position: absolute;
+        top: 25%;
+        left: 24%;
+        width: 54%;
+        height: 1500px;
+        border-radius: 5px;
+    }
+
+    #name {
+        position: absolute;
+        left: 6%;
+        top: 130px;
+        width: 86%;
+        height: 35px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 20px;
+        color: rgb(109, 108, 108);
+
+    }
+
+    #name-label {
+        font-size: 22px;
+        position: absolute;
+        top: 100px;
+        left: 6%;
+        color: white;
+    }
+
+    #email {
+        position: absolute;
+        left: 6%;
+        top: 250px;
+        width: 86%;
+        height: 35px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 20px;
+        color: rgb(109, 108, 108);
+    }
+
+    #email-label {
+        font-size: 22px;
+        position: absolute;
+        top: 220px;
+        left: 6%;
+        color: white;
+    }
+
+    #number {
+        position: absolute;
+        left: 6%;
+        top: 370px;
+        width: 86%;
+        height: 35px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 20px;
+        color: rgb(109, 108, 108);
+    }
+
+    #number-label {
+        font-size: 22px;
+        position: absolute;
+        top: 340px;
+        left: 6%;
+        color: white;
+    }
+
+    #dropdown {
+        font-size: 22px;
+        position: absolute;
+        top: 490px;
+        left: 6%;
+        width: 86%;
+        height: 35px;
+        color: rgb(158, 149, 149);
+        font-size: 20px;
+        color: rgb(109, 108, 108);
+    }
+
+    #label-option {
+        font-size: 22px;
+        position: absolute;
+        top: 460px;
+        left: 6%;
+        color: white;
+    }
+
+    #radio-button {
+        position: absolute;
+        left: 6%;
+        top: 550px;
+        width: 86%;
+        height: 35px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 22px;
+        color: white;
+    }
+
+    #label-favorite {
+        position: absolute;
+        left: 6%;
+        top: 770px;
+        width: 550px;
+        height: 35px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 22px;
+        color: white;
+    }
+
+    #select-favorite {
+        font-size: 22px;
+        position: absolute;
+        top: 800px;
+        left: 6%;
+        width: 86%;
+        height: 35px;
+        color: rgb(158, 149, 149);
+        ""
+    }
+
+    #fildset {
+        position: absolute;
+        left: 6%;
+        top: 900px;
+        width: 590px;
+        height: 260px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 22px;
+        color: white;
+    }
+
+    textarea {
+        position: absolute;
+        left: 6%;
+        top: 1260px;
+        z-index: 2;
+        border-radius: 5px;
+        font-size: 18px;
+        color: rgb(112, 111, 111);
+    }
+
+    #label-textarea {
+        font-size: 22px;
+        position: absolute;
+        top: 1230px;
+        left: 6%;
+        color: white;
+    }
+
+    #submit {
+        font-size: 20px;
+        position: absolute;
+        top: 1420px;
+        left: 6%;
+        color: rgba(41, 3, 3, 0.733);
+        width: 630px;
+        height: 40px;
+    }
+
+    body {
+        background-image: url(imagem/coffee6.jpg);
+        background-repeat: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #title {
+        position: absolute;
+        top: 5px;
+        left: 40%;
+        text-align: center;
+        font-size: 20px;
+        font-family: monospace;
+        font-style: oblique;
+        color: rgb(192, 191, 191);
+    }
+
+    #description {
+        position: absolute;
+        top: 80px;
+        left: 44%;
+        text-align: center;
+        font-size: 18px;
+        font-family: -apple-system;
+        color: rgb(192, 191, 191);
+    }
+</style>
+
+<body>
+
+    <div id="title">
+        <h1>We Love Coffee</h1>
+        <!--User Story #1: I can see a title with id="title"-->
+    </div>
+
+    <p id="description"><i>A Blog for Coffee Lovers</i></p>
+    <!--User Story #2: I can see a short explanation with id="description"-->
+
+    <br>
+
+    <form id="survey-form">
+        <!--User Story #3: I can see a form with id="survey-form"-->
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <!--Story #4: Inside the form element, I am required to enter my name in a field with id="name"-->
+
+        <br>
+
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" id="email" required placeholder="Enter your Email">
+        <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email"-->
+        <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error-->
+        <br>
+
+        <label id="number-label" for="number">Age (optional)</label><br>
+        <input type="number" id="number" placeholder="Type only numbers" pattern="[0-9]+$" min="1" max="">
+        <!--User Story #7: Inside the form, I can enter a number in a field with id="number"-->
+        <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error-->
+        <br>
+
+        <label id="label-option" for="option">Which coffee options did you like best?</label><br>
+        <select id="dropdown" name="amount" size="1">
+            <option selected value="35.00">Select an Option</option>
+            <option value="">Brewed Coffee</option>
+            <option value="">Espresso</option>
+            <option value="">Latte Macchiato</option>
+            <option value="">Ristretto</option>
+            <option value="">Coffee Latte</option>
+            <option value="">Cappuccino</option>
+            <option value="">Mocha</option>
+        </select>
+
+        <br>
+
+        <div id="radio-button">
+            <p>Would you recommend our coffee?</p>
+            <input type="radio" name="choice" value="definitely" /> Definitely<br /><br />
+            <input type="radio" name="choice" value="maybe" /> Maybe<br /><br />
+            <input type="radio" name="choice" value="notsure" /> Not Sure<br /><br />
+            <br />
+        </div>
+
+        <label id="label-favorite" for="label-favorite">What is your favorite time for coffee?</label><br>
+        <select id="select-favorite" name="amount" size="1">
+            <option selected value="">Choose a Time</option>
+            <option value="">Morning</option>
+            <option value="">Evening</option>
+            <option value="">Night</option>
+            <option value="">Any Time</option>
+        </select>
+
+
+        <fieldset id="fildset">
+            <legend>What is the accompaniment for your coffee?</legend>
+
+            <input type="checkbox" id="" name="" value="">
+            <label for="">Chocolate syrup</label><br><br>
+
+            <input type="checkbox" id="" name="" value="">
+            <label for="">Sparkling water</label><br><br>
+
+            <input type="checkbox" id="" name="" value="">
+            <label for="">Cheese bread</label><br><br>
+
+            <input type="checkbox" id="" name="" value="">
+            <label for="">Bread and butter</label><br><br>
+
+            <input type="checkbox" id="" name="" value="">
+            <label for="">Cornmeal cake</label><br><br>
+        </fieldset>
+
+        <label id="label-textarea">Leave a Comment</label>
+        <textarea rows="5" cols="61" placeholder="Leave your comment here..."></textarea>
+
+        <br>
+
+        <input type="submit" id="submit" name="" value="Submit">
+
+        <br>
+
+    </form>
+
+</body>
+
+</html>
